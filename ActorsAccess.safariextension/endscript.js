@@ -1,6 +1,10 @@
 function loginIfUsernamePassword() {
-  if (($('#username').val().length > 0) && ($('#password').val().length > 0)) {
-  	$('input[value="go"]').click();
+  // don't login if the user is typing in one of the fields
+  if (($("#username").is(":focus")) || ($("#password").is(":focus"))) {
+    // do nothing
+  }
+  else if (($('#username').val().length > 0) && ($('#password').val().length > 0)) {
+  	$('input[value="go"]').click(); 
   }
 }
 
