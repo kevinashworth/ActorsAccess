@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Actors Access</title>
+<script type="text/javascript" language="javascript" charset="utf-8">
+
+safari.application.addEventListener("message", function(e) {
+	console.log(safari.extension.settings.bLoginAutomatically);
+	console.log(safari.extension.settings);
+	console.log(safari.extension.settings.getItem("bLoginAutomatically"));
+	if(e.name === "getSettings") {
+		e.target.page.dispatchMessage("setSettings", {
+			bLoginAutomatically: safari.extension.settings.getItem("bLoginAutomatically"),
+			bHideMessages: safari.extension.settings.getItem("bHideMessages"),
+			bPrevNext: safari.extension.settings.getItem("bPrevNext")
+		});
+	}
+}, false);
+
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Kevin Ashworth</string>
+	<key>Builder Version</key>
+	<string>6534.54.16</string>
+	<key>CFBundleDisplayName</key>
+	<string>Actors Access</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.kevinashworth.actorsaccess</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>global.html</string>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>jquery-1.7.1.min.js</string>
+				<string>endscript.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Modify user experience of Actors Access</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://raw.github.com/kevinashworth/ActorsAccess/master/update.plist</string>
+	<key>Website</key>
+	<string>https://github.com/kevinashworth/ActorsAccess</string>
+</dict>
+</plist>
