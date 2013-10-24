@@ -4,18 +4,30 @@
 <title>Actors Access</title>
 <script type="text/javascript" language="javascript" charset="utf-8">
 
-safari.application.addEventListener("message", function(e) {
+console.log('start of global.html');
+
+safari.application.addEventListener("message", messageHandler, false);
+safari.extension.settings.addEventListener("change", changeHandler, false);
+
+function messageHandler(e) {
+/*
 	console.log(safari.extension.settings.bLoginAutomatically);
 	console.log(safari.extension.settings);
 	console.log(safari.extension.settings.getItem("bLoginAutomatically"));
-	if(e.name === "getSettings") {
+*/
+	if (e.name === "getSettings") {
 		e.target.page.dispatchMessage("setSettings", {
 			bLoginAutomatically: safari.extension.settings.getItem("bLoginAutomatically"),
 			bHideMessages: safari.extension.settings.getItem("bHideMessages"),
-			bPrevNext: safari.extension.settings.getItem("bPrevNext")
+			bPrevNext: safari.extension.settings.getItem("bPrevNext"),
+			bAddProLink: safari.extension.settings.getItem("bAddProLink")
 		});
 	}
-}, false);
+}
+
+function changeHandler(e) {
+	console.log("settingsChanged: " + e.name + "; " + e.target);
+}
 
 </script>
 </head>

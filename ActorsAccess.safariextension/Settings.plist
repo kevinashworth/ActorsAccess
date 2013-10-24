@@ -28,9 +28,31 @@
 		<key>Key</key>
 		<string>bPrevNext</string>
 		<key>Title</key>
-		<string>Add 'p' / 'n' as previous / next access keys</string>
+		<string>Add 'p' &amp; 'n' as previous/next Access Keys</string>
 		<key>Type</key>
 		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>bAddNoneProLink</string>
+		<key>Key</key>
+		<string>bAddProLink</string>
+		<key>Title</key>
+		<string>PRO link</string>
+		<key>Titles</key>
+		<array>
+			<string>Add LA PRO link</string>
+			<string>Add NY PRO link</string>
+			<string>None</string>
+		</array>
+		<key>Type</key>
+		<string>RadioButtons</string>
+		<key>Values</key>
+		<array>
+			<string>bAddLaProLink</string>
+			<string>bAddNyProLink</string>
+			<string>bAddNoneProLink</string>
+		</array>
 	</dict>
 </array>
 </plist>
