@@ -16,6 +16,20 @@
 		<key>DefaultValue</key>
 		<true/>
 		<key>Key</key>
+		<string>bPrevNext</string>
+		<key>Title</key>
+		<string>Add 'p' &amp; 'n' as previous/next Access Keys</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>Type</key>
+		<string>Separator</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Key</key>
 		<string>bHideMessages</string>
 		<key>Title</key>
 		<string>Hide instruction messages</string>
@@ -26,32 +40,32 @@
 		<key>DefaultValue</key>
 		<true/>
 		<key>Key</key>
-		<string>bPrevNext</string>
+		<string>bHideVeryFeatured</string>
 		<key>Title</key>
-		<string>Add 'p' &amp; 'n' as previous/next Access Keys</string>
+		<string>Hide 'Very Featured Extra' breakdowns</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
 	<dict>
 		<key>DefaultValue</key>
-		<string>bAddNoneProLink</string>
+		<string>bAddLaProLink</string>
 		<key>Key</key>
 		<string>bAddProLink</string>
 		<key>Title</key>
 		<string>PRO link</string>
 		<key>Titles</key>
 		<array>
+			<string>None</string>
 			<string>Add LA PRO link</string>
 			<string>Add NY PRO link</string>
-			<string>None</string>
 		</array>
 		<key>Type</key>
-		<string>RadioButtons</string>
+		<string>PopUpButton</string>
 		<key>Values</key>
 		<array>
+			<string>bAddNoneProLink</string>
 			<string>bAddLaProLink</string>
 			<string>bAddNyProLink</string>
-			<string>bAddNoneProLink</string>
 		</array>
 	</dict>
 </array>

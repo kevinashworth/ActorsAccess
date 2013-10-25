@@ -64,6 +64,12 @@ function prevNext() {
   });
 }
 
+function hideVeryFeatured() {
+  $("a:containsi('Very Featured Extra')").each(function() {
+    $(this).closest("tr").hide();
+  });
+}
+
 function bAddProLink(LAorNY) {
   var region = "1";
   var text = "LA PRO";
@@ -81,6 +87,10 @@ function bAddProLink(LAorNY) {
 
 $(document).ready( function() {
   var settings, init = function() {
+    if (settings.bLoginAutomatically && ($("form[name$='in']").length > 0) ) {
+      doLogin();
+    }
+    
   	if (settings.bPrevNext) {
   	  prevNext();
   	}
@@ -89,10 +99,10 @@ $(document).ready( function() {
   	  hideMessage();
   	}
   	
-    if (settings.bLoginAutomatically && ($("form[name$='in']").length > 0) ) {
-      doLogin();
-    }
-    
+  	if (settings.bHideVeryFeatured) {
+  	  hideVeryFeatured();
+  	}
+  	
     if ((settings.bAddProLink != "bAddNoneProLink") && ($("ul.sf-menu > li").length == 6)) {
       bAddProLink(settings.bAddProLink);
     }

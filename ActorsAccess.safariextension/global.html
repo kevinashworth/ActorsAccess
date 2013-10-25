@@ -18,8 +18,9 @@ function messageHandler(e) {
 	if (e.name === "getSettings") {
 		e.target.page.dispatchMessage("setSettings", {
 			bLoginAutomatically: safari.extension.settings.getItem("bLoginAutomatically"),
-			bHideMessages: safari.extension.settings.getItem("bHideMessages"),
 			bPrevNext: safari.extension.settings.getItem("bPrevNext"),
+			bHideMessages: safari.extension.settings.getItem("bHideMessages"),
+			bHideVeryFeatured: safari.extension.settings.getItem("bHideVeryFeatured"),
 			bAddProLink: safari.extension.settings.getItem("bAddProLink")
 		});
 	}
