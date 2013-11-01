@@ -64,8 +64,8 @@ function prevNext() {
   });
 }
 
-function hideVeryFeatured() {
-  $("a:containsi('Very Featured Extra')").each(function() {
+function hideFeaturedExtra() {
+  $("a:containsi('Featured Extra')").each(function() {
     $(this).closest("tr").hide();
   });
 }
@@ -82,7 +82,8 @@ function bAddProLink(LAorNY) {
   $("ul.sf-menu").children(":first").before(
     $("<li>").append(
       $("<a>").attr("href", "/projects/?view=breakdowns&region=" + region + "&filter=union%20breakdowns&paying_role=1&exclude_realitytv=1").attr('accesskey', 'h').append(text)
-  ));
+    )
+  );
 }
 
 $(document).ready( function() {
@@ -99,8 +100,8 @@ $(document).ready( function() {
   	  hideMessage();
   	}
   	
-  	if (settings.bHideVeryFeatured) {
-  	  hideVeryFeatured();
+  	if (settings.bHideFeaturedExtra) {
+  	  hideFeaturedExtra();
   	}
   	
     if ((settings.bAddProLink != "bAddNoneProLink") && ($("ul.sf-menu > li").length == 6)) {

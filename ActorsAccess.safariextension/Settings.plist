@@ -40,9 +40,9 @@
 		<key>DefaultValue</key>
 		<true/>
 		<key>Key</key>
-		<string>bHideVeryFeatured</string>
+		<string>bHideFeaturedExtra</string>
 		<key>Title</key>
-		<string>Hide 'Very Featured Extra' breakdowns</string>
+		<string>Hide 'Featured Extra' breakdowns</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
